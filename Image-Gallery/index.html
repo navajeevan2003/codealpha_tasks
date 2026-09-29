@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CodeAlpha Responsive Image Gallery">
+
+    <title> Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span>◆</span>
+            Image Gallery
+        </div>
+
+        <button
+            id="themeBtn"
+            class="theme-btn"
+            type="button">
+            ☀
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p class="subtitle">
+            Responsive Image Gallery
+        </p>
+
+        <h1>
+            Explore the
+            <span>Gallery</span>
+        </h1>
+
+        <p class="description">
+            A responsive image gallery with filtering,
+            search, fullscreen preview and smooth animations.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="gallery-controls">
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search images..."
+                autocomplete="off">
+
+        </div>
+
+    </section>
+
+
+    <!-- FILTERS -->
+
+    <nav class="filters">
+
+        <button
+            class="filter-btn active"
+            data-filter="all">
+            All
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="nature">
+            Nature
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="city">
+            City
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="technology">
+            Technology
+        </button>
+
+    </nav>
+
+
+    <!-- GALLERY -->
+
+    <main class="gallery-container">
+
+        <div
+            class="gallery"
+            id="gallery">
+
+            <!-- IMAGE 1 -->
+
+            <article
+                class="gallery-item"
+                data-category="nature"
+                data-title="Mountain Landscape">
+
+                <img
+                    src="assets/images/image1.jpg"
+                    alt="Mountain Landscape">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Mountain Landscape
+                        </h3>
+
+                        <p>
+                            Nature
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 2 -->
+
+            <article
+                class="gallery-item"
+                data-category="nature"
+                data-title="Forest">
+
+                <img
+                    src="assets/images/image2.jpg"
+                    alt="Forest">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Forest
+                        </h3>
+
+                        <p>
+                            Nature
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 3 -->
+
+            <article
+                class="gallery-item"
+                data-category="city"
+                data-title="Modern City">
+
+                <img
+                    src="assets/images/image3.jpg"
+                    alt="Modern City">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Modern City
+                        </h3>
+
+                        <p>
+                            City
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 4 -->
+
+            <article
+                class="gallery-item"
+                data-category="city"
+                data-title="Night City">
+
+                <img
+                    src="assets/images/image4.jpg"
+                    alt="Night City">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Night City
+                        </h3>
+
+                        <p>
+                            City
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 5 -->
+
+            <article
+                class="gallery-item"
+                data-category="technology"
+                data-title="Technology">
+
+                <img
+                    src="assets/images/image5.jpg"
+                    alt="Technology">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Technology
+                        </h3>
+
+                        <p>
+                            Technology
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 6 -->
+
+            <article
+                class="gallery-item"
+                data-category="technology"
+                data-title="Artificial Intelligence">
+
+                <img
+                    src="assets/images/image6.jpg"
+                    alt="Artificial Intelligence">
+
+                <div class="image-overlay">
+
+                    <div>
+
+                        <h3>
+                            Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Technology
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="view-btn"
+                        type="button">
+                        ↗
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+            id="noResults"
+            class="no-results">
+
+            <div>⌕</div>
+
+            <h2>
+                No images found
+            </h2>
+
+            <p>
+                Try another search or category.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- MODAL -->
+
+    <div
+        class="modal"
+        id="imageModal">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            type="button">
+            ×
+        </button>
+
+        <button
+            class="modal-nav prev"
+            id="prevBtn"
+            type="button">
+            ‹
+        </button>
+
+        <div class="modal-content">
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Preview">
+
+            <div class="modal-info">
+
+                <h2 id="modalTitle">
+                    Image
+                </h2>
+
+                <p id="modalCategory">
+                    Category
+                </p>
+
+            </div>
+
+        </div>
+
+        <button
+            class="modal-nav next"
+            id="nextBtn"
+            type="button">
+            ›
+        </button>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Image Gallery
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
